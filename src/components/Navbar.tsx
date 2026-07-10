@@ -32,7 +32,7 @@ export default function Navbar() {
               {siteConfig.bookClubName}
             </span>
             <span className="hidden text-xs uppercase tracking-[0.24em] text-espresso/60 sm:block">
-              Private book club
+              NYC&apos;s Hottest Social Club
             </span>
           </span>
         </NavLink>
