@@ -24,8 +24,13 @@ export default function Navbar() {
           className="group flex items-center gap-3"
           onClick={() => setIsOpen(false)}
         >
-          <span className="grid size-10 place-items-center rounded-full bg-forest text-vellum shadow-soft transition group-hover:bg-burgundy">
-            <BookOpen size={20} aria-hidden="true" />
+          <span className="size-10 overflow-hidden rounded-full border border-espresso/10 bg-espresso shadow-soft transition group-hover:scale-105">
+            <img
+              src="/images/ybc-logo.jpg"
+              alt=""
+              aria-hidden="true"
+              className="h-full w-full object-cover"
+            />
           </span>
           <span>
             <span className="block font-display text-xl text-espresso">
