@@ -41,15 +41,29 @@ export const photos: Photo[] = [
   },
 ];
 
-export const tomfooleryPhotos: Photo[] = Array.from({ length: 12 }, (_, index) => {
-  const photoNumber = index + 1;
+const tomfooleryPhoto = (photoNumber: number, caption: string): Photo => {
   const paddedNumber = String(photoNumber).padStart(2, '0');
 
   return {
     id: `out-about-${paddedNumber}`,
     imageUrl: `/images/photos/tomfoolery/out-about-${paddedNumber}.jpg`,
-    caption: String(photoNumber),
+    caption,
     kicker: 'Out and about',
     altText: `Out and about and tomfoolery photo ${photoNumber}.`,
   };
-});
+};
+
+export const tomfooleryPhotos: Photo[] = [
+  tomfooleryPhoto(2, 'The greatest night of our lives.'),
+  tomfooleryPhoto(1, 'Ah to be the bros drinking in New York together'),
+  tomfooleryPhoto(3, '3'),
+  tomfooleryPhoto(4, '4'),
+  tomfooleryPhoto(5, 'Freedom!'),
+  tomfooleryPhoto(6, '6'),
+  tomfooleryPhoto(7, '26 scoops or 6 foot 3 inches in Yuvis world'),
+  tomfooleryPhoto(8, '8'),
+  tomfooleryPhoto(9, '9'),
+  tomfooleryPhoto(10, '10'),
+  tomfooleryPhoto(11, '11'),
+  tomfooleryPhoto(12, '12'),
+];
