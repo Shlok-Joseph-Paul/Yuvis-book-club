@@ -39,6 +39,18 @@ export const photos: Photo[] = [
     altText:
       'Book club group selfie in a warmly lit wine room with wooden shelves, bottles, and string lights.',
   },
+  {
+    id: 'book-club-extra-01',
+    imageUrl: '/images/photos/book-club-extra-01.jpg',
+    caption: '1',
+    altText: 'Book club photo 1.',
+  },
+  {
+    id: 'book-club-extra-02',
+    imageUrl: '/images/photos/book-club-extra-02.jpg',
+    caption: '2',
+    altText: 'Book club photo 2.',
+  },
 ];
 
 const tomfooleryPhoto = (photoNumber: number, caption: string): Photo => {
