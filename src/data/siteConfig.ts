@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
     howStarted:
       'The club began when sweet Yuvi started reading voraciously and realized that his friends were in desperate need of intellectual rescue. Determined to save his boorish roommates and companions from the creeping damnation of idiocy, he gathered them together, placed books in their hands, and hoped for the best.',
     readingTaste:
-      'The shelf leans toward literary fiction, contemporary favorites, reflective speculative stories, myth retellings, and anything that leaves the group texting quotes the next morning.',
+      'Legend has it that the club reads whatever Yuvi happens to fancy. Recently, however, there have been whispers of internal mutiny and dangerous talk of democratic book selection. No doubt Yuvi, in the grand tradition of benevolent autocrats everywhere, will restore order, suppress dissent, and assign another 500-page novel.',
     meetingRhythm:
       'The club meets once a month, usually around a kitchen table or living-room coffee table, with enough time for book talk, life updates, and at least one dramatic disagreement about a character choice.',
     traditions: [
