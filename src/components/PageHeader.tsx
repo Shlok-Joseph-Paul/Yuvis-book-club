@@ -1,7 +1,7 @@
 type PageHeaderProps = {
   eyebrow: string;
   title: string;
-  description: string;
+  description?: string;
 };
 
 export default function PageHeader({ eyebrow, title, description }: PageHeaderProps) {
@@ -14,7 +14,9 @@ export default function PageHeader({ eyebrow, title, description }: PageHeaderPr
         <h1 className="max-w-4xl font-display text-4xl leading-tight text-espresso sm:text-5xl">
           {title}
         </h1>
-        <p className="mt-5 max-w-2xl text-lg leading-8 text-espresso/70">{description}</p>
+        {description ? (
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-espresso/70">{description}</p>
+        ) : null}
       </div>
     </section>
   );

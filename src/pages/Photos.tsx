@@ -12,8 +12,7 @@ export default function Photos() {
     <>
       <PageHeader
         eyebrow="Photo album"
-        title="Snapshots from the meetings between the pages."
-        description="A simple gallery for the tables, snacks, notes, and little memories that make the club feel like itself."
+        title="Snapshots of the memories between the pages and outside the books"
       />
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="mb-7 max-w-3xl">
