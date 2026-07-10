@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(210, 154, 69, 0.16), transparent 34rem),
+    #f7f0e3;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+}
+
+::selection {
+  background: rgba(143, 47, 69, 0.22);
+}
+
+@layer components {
+  .hero-button {
+    @apply inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold shadow-soft transition duration-200;
+  }
+
+  .footer-link {
+    @apply rounded-full border border-vellum/15 px-4 py-2 text-sm font-semibold text-vellum/80 transition hover:bg-vellum hover:text-espresso;
+  }
+
+  .tag-pill {
+    @apply rounded-full bg-forest/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-forest;
+  }
+
+  .field {
+    @apply h-12 w-full rounded-full border border-espresso/15 bg-parchment px-4 text-sm font-semibold text-espresso outline-none transition placeholder:text-espresso/40 focus:border-burgundy focus:ring-4 focus:ring-burgundy/15;
+  }
+
+  .story-panel {
+    @apply rounded-2xl border border-espresso/10 bg-vellum p-6 shadow-soft;
+  }
+
+  .story-panel h2 {
+    @apply mt-4 font-display text-3xl text-espresso;
+  }
+
+  .story-panel p {
+    @apply mt-4 leading-8 text-espresso/75;
+  }
+}
+
+.page-transition {
+  animation: page-fade 260ms ease-out;
+}
+
+@keyframes page-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

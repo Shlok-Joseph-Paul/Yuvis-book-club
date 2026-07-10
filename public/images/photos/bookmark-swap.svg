@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="title desc">
+  <title id="title">Bookmark swap placeholder photo</title>
+  <desc id="desc">Illustrated handmade bookmarks beside stacked books.</desc>
+  <rect width="900" height="720" fill="#fffaf1"/>
+  <rect x="170" y="438" width="560" height="72" rx="12" fill="#2d4059"/>
+  <rect x="210" y="360" width="504" height="72" rx="12" fill="#8f2f45"/>
+  <rect x="146" y="282" width="590" height="72" rx="12" fill="#245244"/>
+  <path d="M278 112h96v300l-48-38-48 38z" fill="#d29a45"/>
+  <path d="M414 96h96v300l-48-38-48 38z" fill="#b8c3a5"/>
+  <path d="M550 128h96v300l-48-38-48 38z" fill="#4a3329"/>
+  <circle cx="326" cy="174" r="20" fill="#fffaf1"/>
+  <circle cx="462" cy="158" r="20" fill="#8f2f45"/>
+  <circle cx="598" cy="190" r="20" fill="#d29a45"/>
+</svg>

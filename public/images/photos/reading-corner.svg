@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Quiet reading corner placeholder photo</title>
+  <desc id="desc">Illustrated reading chair with a book and lamp.</desc>
+  <rect width="900" height="700" fill="#f7f0e3"/>
+  <rect y="520" width="900" height="180" fill="#b8c3a5"/>
+  <path d="M258 308c0-70 56-126 126-126h56c70 0 126 56 126 126v178H258z" fill="#8f2f45"/>
+  <rect x="224" y="388" width="376" height="140" rx="54" fill="#4a3329"/>
+  <path d="M342 408h148v78H342z" fill="#fffaf1"/>
+  <path d="M416 408v78" stroke="#d29a45" stroke-width="8"/>
+  <rect x="666" y="174" width="20" height="360" fill="#2d4059"/>
+  <path d="M590 174h172l-36-94H626z" fill="#d29a45"/>
+  <circle cx="676" cy="210" r="78" fill="#d29a45" opacity=".28"/>
+</svg>

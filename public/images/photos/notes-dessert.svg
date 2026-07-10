@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Notes and dessert placeholder photo</title>
+  <desc id="desc">Illustrated notebook, dessert plate, and paperback on a table.</desc>
+  <rect width="900" height="650" fill="#f7f0e3"/>
+  <rect x="80" y="86" width="380" height="470" rx="18" fill="#fffaf1"/>
+  <path d="M130 172h258M130 232h258M130 292h210M130 352h236M130 412h184" stroke="#4a3329" stroke-width="10" stroke-linecap="round" opacity=".28"/>
+  <rect x="526" y="118" width="214" height="312" rx="12" fill="#245244"/>
+  <rect x="548" y="146" width="170" height="264" rx="8" fill="#b8c3a5"/>
+  <circle cx="640" cy="502" r="78" fill="#fffaf1"/>
+  <path d="M604 492c34-58 102-48 108 4 4 42-34 72-72 72s-58-30-36-76z" fill="#8f2f45"/>
+</svg>

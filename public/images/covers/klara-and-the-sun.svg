@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-labelledby="title desc">
+  <title id="title">Klara and the Sun placeholder cover</title>
+  <desc id="desc">Warm sun and geometric window cover placeholder.</desc>
+  <rect width="600" height="800" fill="#f7f0e3"/>
+  <circle cx="414" cy="206" r="128" fill="#d29a45"/>
+  <path d="M86 124h292v460H86z" fill="#245244"/>
+  <path d="M128 172h82v150h-82zM246 172h82v150h-82zM128 358h82v178h-82zM246 358h82v178h-82z" fill="#fffaf1" opacity=".88"/>
+  <path d="M378 124h96v460h-96z" fill="#2d4059"/>
+  <text x="78" y="650" fill="#23201d" font-family="Georgia, serif" font-size="66" font-weight="700">
+    <tspan x="78" dy="0">Klara and</tspan>
+    <tspan x="78" dy="78">the Sun</tspan>
+  </text>
+  <text x="84" y="760" fill="#4a3329" font-family="Inter, Arial, sans-serif" font-size="27" letter-spacing="5">KAZUO ISHIGURO</text>
+</svg>
