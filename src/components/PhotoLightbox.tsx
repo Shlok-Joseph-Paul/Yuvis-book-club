@@ -44,7 +44,7 @@ export default function PhotoLightbox({ photo, onClose }: PhotoLightboxProps) {
           />
           <div className="overflow-y-auto p-6 lg:p-8">
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-burgundy">
-              Club photo
+              {photo.kicker ?? 'Club photo'}
             </p>
             <h2 className="mt-3 font-display text-3xl leading-tight text-espresso">
               {photo.caption}

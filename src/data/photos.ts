@@ -40,3 +40,16 @@ export const photos: Photo[] = [
       'Book club group selfie in a warmly lit wine room with wooden shelves, bottles, and string lights.',
   },
 ];
+
+export const tomfooleryPhotos: Photo[] = Array.from({ length: 12 }, (_, index) => {
+  const photoNumber = index + 1;
+  const paddedNumber = String(photoNumber).padStart(2, '0');
+
+  return {
+    id: `out-about-${paddedNumber}`,
+    imageUrl: `/images/photos/tomfoolery/out-about-${paddedNumber}.jpg`,
+    caption: String(photoNumber),
+    kicker: 'Out and about',
+    altText: `Out and about and tomfoolery photo ${photoNumber}.`,
+  };
+});

@@ -16,6 +16,7 @@ export type Photo = {
   id: string;
   imageUrl: string;
   caption: string;
+  kicker?: string;
   date?: string;
   associatedBookId?: string;
   location?: string;
