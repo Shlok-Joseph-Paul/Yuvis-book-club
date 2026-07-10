@@ -27,4 +27,9 @@ export const members: Member[] = [
     name: 'Abby',
     note: 'I read a lot',
   },
+  {
+    id: 'jordan',
+    name: 'Jordan',
+    note: 'Stickers!',
+  },
 ];
