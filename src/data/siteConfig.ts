@@ -5,7 +5,8 @@ export const siteConfig: SiteConfig = {
   bookClubName: "Yuvi's Book Club",
   welcomeMessage:
     'A cozy corner for the books we have loved, the conversations that wandered, and the memories tucked between chapters.',
-  footerMessage: 'Made for shared stories, warm mugs, and the next great chapter.',
+  footerMessage:
+    'An elite social club designed by Yuvi, situated in the east village with plans for global expansion',
   about: {
     intro:
       "Yuvi's Book Club is a warm private reading circle built around thoughtful books, generous conversation, and the simple delight of gathering with people who notice good sentences.",
