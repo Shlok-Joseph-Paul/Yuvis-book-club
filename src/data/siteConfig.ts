@@ -15,7 +15,7 @@ export const siteConfig: SiteConfig = {
     readingTaste:
       'Legend has it that the club reads whatever Yuvi happens to fancy. Recently, however, there have been whispers of internal mutiny and dangerous talk of democratic book selection. No doubt Yuvi, in the grand tradition of benevolent autocrats everywhere, will restore order, suppress dissent, and assign another 500-page novel.',
     meetingRhythm:
-      'The club meets once a month, usually around a kitchen table or living-room coffee table, with enough time for book talk, life updates, and at least one dramatic disagreement about a character choice.',
+      'Once a month, they gather to discuss the book, then spend two hours discussing absolutely everything else.',
     traditions: [
       'A snack or drink inspired by the book whenever possible.',
       'One favorite line read aloud before the discussion ends.',
