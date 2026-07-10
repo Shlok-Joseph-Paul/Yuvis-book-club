@@ -9,7 +9,7 @@ export const siteConfig: SiteConfig = {
     'An elite social club designed by Yuvi, situated in the east village with plans for global expansion',
   about: {
     intro:
-      "Yuvi's Book Club is a warm private reading circle built around thoughtful books, generous conversation, and the simple delight of gathering with people who notice good sentences.",
+      'Yuvi’s Book Club is a highly exclusive New York literary society with no clubhouse, no dress code, and only slightly less gatekeeping than Soho House.',
     howStarted:
       'The club began when sweet Yuvi started reading voraciously and realized that his friends were in desperate need of intellectual rescue. Determined to save his boorish roommates and companions from the creeping damnation of idiocy, he gathered them together, placed books in their hands, and hoped for the best.',
     readingTaste:
