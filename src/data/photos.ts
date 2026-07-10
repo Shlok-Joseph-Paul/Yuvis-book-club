@@ -62,7 +62,7 @@ export const tomfooleryPhotos: Photo[] = [
   tomfooleryPhoto(6, 'The boys read fantasy and Shlok dreams he has hair again'),
   tomfooleryPhoto(7, '26 scoops or 6 foot 3 inches in Yuvis world'),
   tomfooleryPhoto(8, '8'),
-  tomfooleryPhoto(9, '9'),
+  tomfooleryPhoto(9, 'Changing Shloks life with Aux Marveilleux'),
   tomfooleryPhoto(10, "POV youre a UPS box moving to SK and Yuvi's new crib"),
   tomfooleryPhoto(11, 'Dude said his favorite activity was running in 2015 what a liar'),
   tomfooleryPhoto(12, '12'),
