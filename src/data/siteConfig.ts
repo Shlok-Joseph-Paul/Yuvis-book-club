@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
     intro:
       "Yuvi's Book Club is a warm private reading circle built around thoughtful books, generous conversation, and the simple delight of gathering with people who notice good sentences.",
     howStarted:
-      'The club began as a casual text thread about one book everyone meant to read. One borrowed copy, three voice notes, and a very enthusiastic snack plan later, it became a monthly tradition.',
+      'The club began when sweet Yuvi started reading voraciously and realized that his friends were in desperate need of intellectual rescue. Determined to save his boorish roommates and companions from the creeping damnation of idiocy, he gathered them together, placed books in their hands, and hoped for the best.',
     readingTaste:
       'The shelf leans toward literary fiction, contemporary favorites, reflective speculative stories, myth retellings, and anything that leaves the group texting quotes the next morning.',
     meetingRhythm:
