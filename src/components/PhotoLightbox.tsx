@@ -1,4 +1,4 @@
-import { CalendarDays, MapPin, X } from 'lucide-react';
+import { CalendarDays, X } from 'lucide-react';
 import { books } from '../data/books';
 import { formatMonthYear } from '../lib/utils';
 import type { Photo } from '../types';
@@ -49,17 +49,11 @@ export default function PhotoLightbox({ photo, onClose }: PhotoLightboxProps) {
             <h2 className="mt-3 font-display text-3xl leading-tight text-espresso">
               {photo.caption}
             </h2>
-            <div className="mt-6 space-y-3 text-espresso/70">
+            <div className="mt-6 text-espresso/70">
               {photo.date ? (
                 <p className="flex items-center gap-2">
                   <CalendarDays size={18} className="text-forest" aria-hidden="true" />
                   {formatMonthYear(photo.date)}
-                </p>
-              ) : null}
-              {photo.location ? (
-                <p className="flex items-center gap-2">
-                  <MapPin size={18} className="text-forest" aria-hidden="true" />
-                  {photo.location}
                 </p>
               ) : null}
             </div>

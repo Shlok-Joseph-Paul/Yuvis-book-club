@@ -37,10 +37,11 @@ export default function PhotoGallery({ photos, onSelect }: PhotoGalleryProps) {
           />
           <span className="block p-4">
             <span className="block font-semibold leading-6 text-espresso">{photo.caption}</span>
-            <span className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-sm text-espresso/60">
-              {photo.date ? <span>{formatMonthYear(photo.date)}</span> : null}
-              {photo.location ? <span>{photo.location}</span> : null}
-            </span>
+            {photo.date ? (
+              <span className="mt-2 block text-sm text-espresso/60">
+                {formatMonthYear(photo.date)}
+              </span>
+            ) : null}
           </span>
         </button>
       ))}
