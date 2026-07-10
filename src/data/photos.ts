@@ -78,4 +78,5 @@ export const tomfooleryPhotos: Photo[] = [
   tomfooleryPhoto(10, "POV youre a UPS box moving to SK and Yuvi's new crib"),
   tomfooleryPhoto(11, 'Dude said his favorite activity was running in 2015 what a liar'),
   tomfooleryPhoto(12, '12'),
+  tomfooleryPhoto(13, '13'),
 ];
