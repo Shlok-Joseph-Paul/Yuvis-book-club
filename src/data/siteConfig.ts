@@ -3,8 +3,7 @@ import type { SiteConfig } from '../types';
 // Start here when personalizing the website: name, welcome copy, and About page text.
 export const siteConfig: SiteConfig = {
   bookClubName: "Yuvi's Book Club",
-  welcomeMessage:
-    'A cozy corner for the books we have loved, the conversations that wandered, and the memories tucked between chapters.',
+  welcomeMessage: 'More than a book club',
   footerMessage:
     'An elite social club designed by Yuvi, situated in the east village with plans for global expansion',
   about: {
