@@ -42,13 +42,13 @@ export const photos: Photo[] = [
   {
     id: 'book-club-extra-01',
     imageUrl: '/images/photos/book-club-extra-01.jpg',
-    caption: '1',
+    caption: 'Couple goals',
     altText: 'Book club photo 1.',
   },
   {
     id: 'book-club-extra-02',
     imageUrl: '/images/photos/book-club-extra-02.jpg',
-    caption: '2',
+    caption: 'Heaven and Earth in Meghans cookies',
     altText: 'Book club photo 2.',
   },
 ];
@@ -73,10 +73,10 @@ export const tomfooleryPhotos: Photo[] = [
   tomfooleryPhoto(5, 'Freedom!'),
   tomfooleryPhoto(6, 'The boys read fantasy and Shlok dreams he has hair again'),
   tomfooleryPhoto(7, '26 scoops or 6 foot 3 inches in Yuvis world'),
-  tomfooleryPhoto(8, '8'),
+  tomfooleryPhoto(8, 'McGoobin'),
   tomfooleryPhoto(9, 'Changing Shloks life with Aux Marveilleux'),
   tomfooleryPhoto(10, "POV youre a UPS box moving to SK and Yuvi's new crib"),
   tomfooleryPhoto(11, 'Dude said his favorite activity was running in 2015 what a liar'),
-  tomfooleryPhoto(12, '12'),
-  tomfooleryPhoto(13, '13'),
+  tomfooleryPhoto(12, 'Smoochy'),
+  tomfooleryPhoto(13, 'Meg GG and Yuvi McGroovy'),
 ];
