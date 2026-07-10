@@ -24,9 +24,9 @@ export default function Navbar() {
           className="group flex items-center gap-3"
           onClick={() => setIsOpen(false)}
         >
-          <span className="size-10 overflow-hidden rounded-full border border-espresso/10 bg-espresso shadow-soft transition group-hover:scale-105">
+          <span className="size-11 overflow-hidden rounded-full border border-espresso/10 bg-espresso shadow-soft transition group-hover:scale-105">
             <img
-              src="/images/ybc-logo.jpg"
+              src="/images/ybc-logo.png"
               alt=""
               aria-hidden="true"
               className="h-full w-full object-cover"
