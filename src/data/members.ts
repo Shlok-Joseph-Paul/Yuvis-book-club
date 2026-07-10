@@ -3,6 +3,11 @@ import type { Member } from '../types';
 // Edit this list with the real names, nicknames, and quotes for the group.
 export const members: Member[] = [
   {
+    id: 'sarah-kate',
+    name: 'Sarah Kate',
+    note: 'My wife my life',
+  },
+  {
     id: 'meghan',
     name: 'Meghan',
     note: 'Slay',
@@ -16,11 +21,6 @@ export const members: Member[] = [
     id: 'danny',
     name: 'Danny',
     note: 'This shit rad yo',
-  },
-  {
-    id: 'sarah-kate',
-    name: 'Sarah Kate',
-    note: 'My wife my life',
   },
   {
     id: 'abby',
