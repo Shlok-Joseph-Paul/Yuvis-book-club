@@ -56,7 +56,7 @@ const tomfooleryPhoto = (photoNumber: number, caption: string): Photo => {
 export const tomfooleryPhotos: Photo[] = [
   tomfooleryPhoto(2, 'The greatest night of our lives.'),
   tomfooleryPhoto(1, 'Ah to be the bros drinking in New York together'),
-  tomfooleryPhoto(3, '3'),
+  tomfooleryPhoto(3, 'Megan forever dinner guest at the Chugh Thomas household'),
   tomfooleryPhoto(4, 'Guru and Yuvi engrossed in discussion about books no doubt'),
   tomfooleryPhoto(5, 'Freedom!'),
   tomfooleryPhoto(6, 'The boys read fantasy and Shlok dreams he has hair again'),
