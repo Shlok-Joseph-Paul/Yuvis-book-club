@@ -57,7 +57,7 @@ export const tomfooleryPhotos: Photo[] = [
   tomfooleryPhoto(2, 'The greatest night of our lives.'),
   tomfooleryPhoto(1, 'Ah to be the bros drinking in New York together'),
   tomfooleryPhoto(3, '3'),
-  tomfooleryPhoto(4, '4'),
+  tomfooleryPhoto(4, 'Guru and Yuvi engrossed in discussion about books no doubt'),
   tomfooleryPhoto(5, 'Freedom!'),
   tomfooleryPhoto(6, '6'),
   tomfooleryPhoto(7, '26 scoops or 6 foot 3 inches in Yuvis world'),
