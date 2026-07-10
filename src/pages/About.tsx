@@ -54,9 +54,6 @@ export default function About() {
               </p>
               <h2 className="mt-3 font-display text-4xl text-espresso">The current circle</h2>
             </div>
-            <p className="max-w-xl leading-7 text-espresso/70">
-              Update names, favorite genres, and notes in src/data/members.ts.
-            </p>
           </div>
 
           {members.length > 0 ? (
