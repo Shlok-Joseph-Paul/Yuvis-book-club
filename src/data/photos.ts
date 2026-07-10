@@ -33,7 +33,7 @@ export const photos: Photo[] = [
   {
     id: 'wine-room-group-selfie',
     imageUrl: '/images/photos/wine-room-group-selfie.jpg',
-    caption: 'A full-circle group selfie among the shelves and string lights.',
+    caption: 'hammered',
     associatedBookId: 'vera-or-faith',
     location: 'Wine room',
     altText:
