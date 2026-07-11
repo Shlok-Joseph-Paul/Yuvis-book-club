@@ -79,4 +79,5 @@ export const tomfooleryPhotos: Photo[] = [
   tomfooleryPhoto(11, 'Dude said his favorite activity was running in 2015 what a liar'),
   tomfooleryPhoto(12, 'Smoochy'),
   tomfooleryPhoto(13, 'Meg GG and Yuvi McGroovy'),
+  tomfooleryPhoto(14, "MegG's window"),
 ];
