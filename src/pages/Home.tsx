@@ -1,139 +1,182 @@
-import { ArrowRight, BookOpen, Camera, Heart, Users } from 'lucide-react';
+import { ArrowRight, BookOpen, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { books } from '../data/books';
 import { siteConfig } from '../data/siteConfig';
 import { byRecentDate, formatMonthYear } from '../lib/utils';
-import BookCover from '../components/BookCover';
 
-const recentBook = byRecentDate(books)[0];
+const recentBooks = byRecentDate(books);
+const recentBook = recentBooks[0];
+
+const collageItems = [
+  {
+    to: '/photos',
+    imageUrl: '/images/photos/midnight-library-table.jpg',
+    alt: 'A Midnight Library meeting table with books, drinks, notes, desserts, and a candle.',
+    className: 'home-collage-large',
+  },
+  {
+    to: '/books/tell-me-everything',
+    imageUrl: '/images/covers/tell-me-everything.jpg',
+    alt: 'Tell Me Everything book cover.',
+    className: 'home-collage-cover',
+  },
+  {
+    to: '/books/tomorrow-and-tomorrow-and-tomorrow',
+    imageUrl: '/images/covers/tomorrow-and-tomorrow-and-tomorrow.jpg',
+    alt: 'Tomorrow, and Tomorrow, and Tomorrow book cover.',
+    className: 'home-collage-cover',
+  },
+  {
+    to: '/photos',
+    imageUrl: '/images/photos/book-club-extra-02.jpg',
+    alt: 'Book club table spread with cookies, drinks, and books.',
+    className: 'home-collage-tall',
+  },
+  {
+    to: '/books/martyr',
+    imageUrl: '/images/covers/martyr.jpg',
+    alt: 'Martyr! book cover.',
+    className: 'home-collage-spine',
+  },
+  {
+    to: '/books/orbital',
+    imageUrl: '/images/covers/orbital.jpg',
+    alt: 'Orbital book cover.',
+    className: 'home-collage-cover',
+  },
+  {
+    to: '/photos',
+    imageUrl: '/images/photos/wedding-people-sidewalk.jpg',
+    alt: 'Book club members gathered around an outdoor table at night.',
+    className: 'home-collage-wide',
+  },
+  {
+    to: '/books/the-heaven-and-earth-grocery-store',
+    imageUrl: '/images/covers/the-heaven-and-earth-grocery-store.jpg',
+    alt: 'The Heaven and Earth Grocery Store book cover.',
+    className: 'home-collage-cover',
+  },
+  {
+    to: '/books/yellowface',
+    imageUrl: '/images/covers/yellowface.jpg',
+    alt: 'Yellowface book cover.',
+    className: 'home-collage-cover',
+  },
+];
+
+const quickLinks = [
+  {
+    title: 'The archive',
+    text: 'Books, captions, photos, and the club lore in one place.',
+    to: '/books',
+  },
+  {
+    title: 'Photo roll',
+    text: 'The meetings, the tables, the nights out, and the evidence.',
+    to: '/photos',
+  },
+  {
+    title: 'The thesis',
+    text: 'Yuvi chooses, the people obey, literature survives.',
+    to: '/about',
+  },
+];
 
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-[72vh] overflow-hidden bg-ink text-vellum">
-        <img
-          className="absolute inset-0 h-full w-full object-cover"
-          src="/images/hero-book-club.png"
-          alt="Cozy book club table with books, mugs, notebooks, and warm lamplight."
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(35,32,29,0.86),rgba(35,32,29,0.52),rgba(35,32,29,0.12))]" />
-
-        <div className="relative mx-auto flex min-h-[72vh] max-w-7xl items-center px-4 py-16 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-vellum/20 bg-vellum/10 px-4 py-2 text-sm font-semibold text-vellum/85 backdrop-blur">
-              <Heart size={16} aria-hidden="true" />
-              A private literary circle
-            </p>
-            <h1 className="font-display text-5xl leading-[1.02] text-vellum sm:text-7xl lg:text-8xl">
-              {siteConfig.bookClubName}
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-vellum/85 sm:text-xl">
-              {siteConfig.welcomeMessage}
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link className="hero-button bg-burgundy text-vellum hover:bg-forest" to="/books">
+      <section className="home-editorial-shell">
+        <div className="home-editorial-hero">
+          <div className="home-editorial-copy">
+            <p className="home-edition-badge">East Village Edition</p>
+            <h1 className="home-editorial-title">{siteConfig.welcomeMessage}</h1>
+            <p className="home-editorial-lede">{siteConfig.about.intro}</p>
+            <div className="home-editorial-actions">
+              <Link className="home-editorial-button home-editorial-button-primary" to="/books">
                 <BookOpen size={18} aria-hidden="true" />
-                Books
+                Enter archive
               </Link>
-              <Link className="hero-button bg-vellum text-espresso hover:bg-marigold" to="/photos">
+              <Link className="home-editorial-button" to="/photos">
                 <Camera size={18} aria-hidden="true" />
-                Photos
-              </Link>
-              <Link
-                className="hero-button border border-vellum/35 bg-vellum/10 text-vellum backdrop-blur hover:bg-vellum hover:text-espresso"
-                to="/about"
-              >
-                <Users size={18} aria-hidden="true" />
-                About
+                Photo roll
               </Link>
             </div>
           </div>
+
+          <div className="home-collage" aria-label="Yuvi's Book Club books and memories">
+            {collageItems.map((item) => (
+              <Link key={`${item.to}-${item.imageUrl}`} to={item.to} className={item.className}>
+                <img src={item.imageUrl} alt={item.alt} />
+              </Link>
+            ))}
+          </div>
         </div>
+      </section>
+
+      <section className="home-archive-strip" aria-label="Club highlights">
+        <Link
+          className="home-archive-cell"
+          to={recentBook ? `/books/${recentBook.id}` : '/books'}
+        >
+          <span>Currently reading</span>
+          <strong>{recentBook?.title ?? siteConfig.bookClubName}</strong>
+          <small>
+            {recentBook
+              ? `${formatMonthYear(recentBook.dateRead)} by ${recentBook.author}`
+              : 'The next official selection'}
+          </small>
+        </Link>
+        {quickLinks.map((item) => (
+          <Link key={item.title} className="home-archive-cell" to={item.to}>
+            <span>{item.title}</span>
+            <strong>{item.text}</strong>
+            <small>
+              Visit
+              <ArrowRight size={14} aria-hidden="true" />
+            </small>
+          </Link>
+        ))}
       </section>
 
       <section className="bg-vellum">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[1fr_1.1fr] lg:px-8">
-          <div>
-            <p className="text-sm font-bold uppercase tracking-[0.24em] text-burgundy">
-              Most recent read
-            </p>
-            <h2 className="mt-3 font-display text-4xl leading-tight text-espresso">
-              The latest chapter in the club archive.
-            </h2>
-            <p className="mt-4 max-w-xl leading-7 text-espresso/70">
-              Each book becomes part of the club's shared memory: the notes, the snacks, the
-              arguments, and the one line someone still brings up weeks later.
-            </p>
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-4 border-b border-espresso/15 pb-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.24em] text-burgundy">
+                Latest shelf
+              </p>
+              <h2 className="mt-2 font-display text-4xl leading-tight text-espresso">
+                Recent appointments from the benevolent autocrat.
+              </h2>
+            </div>
+            <Link className="inline-flex items-center gap-2 text-sm font-bold text-burgundy" to="/books">
+              Browse every book
+              <ArrowRight size={16} aria-hidden="true" />
+            </Link>
           </div>
 
-          {recentBook ? (
-            <Link
-              to={`/books/${recentBook.id}`}
-              className="group grid gap-5 rounded-2xl border border-espresso/10 bg-parchment p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-lift sm:grid-cols-[140px_1fr]"
-            >
-              <BookCover book={recentBook} className="w-full rounded-xl" />
-              <span className="flex flex-col justify-center">
-                <span className="text-sm font-bold uppercase tracking-[0.18em] text-forest">
-                  {formatMonthYear(recentBook.dateRead)}
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            {recentBooks.slice(0, 6).map((book) => (
+              <Link
+                key={book.id}
+                to={`/books/${book.id}`}
+                className="group min-w-0"
+                aria-label={`Read notes for ${book.title}`}
+              >
+                <img
+                  className="aspect-[2/3] w-full border-2 border-espresso object-cover transition group-hover:-translate-y-1"
+                  src={book.coverImage}
+                  alt={`${book.title} book cover`}
+                />
+                <span className="mt-3 block truncate text-sm font-bold text-espresso group-hover:text-burgundy">
+                  {book.title}
                 </span>
-                <span className="mt-2 font-display text-3xl leading-tight text-espresso group-hover:text-burgundy">
-                  {recentBook.title}
+                <span className="mt-1 block text-xs font-semibold text-espresso/55">
+                  {formatMonthYear(book.dateRead)}
                 </span>
-                <span className="mt-1 text-sm font-semibold text-espresso/65">
-                  by {recentBook.author}
-                </span>
-                <span className="mt-4 leading-7 text-espresso/70">
-                  {recentBook.shortDescription}
-                </span>
-                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-burgundy">
-                  Read the notes
-                  <ArrowRight size={16} aria-hidden="true" />
-                </span>
-              </span>
-            </Link>
-          ) : (
-            <div className="rounded-2xl border border-dashed border-espresso/25 bg-parchment p-8">
-              <h2 className="font-display text-2xl text-espresso">No books added yet</h2>
-              <p className="mt-2 text-espresso/70">
-                Add a book in src/data/books.ts to feature it here.
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
-
-      <section className="bg-parchment">
-        <div className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
-          {[
-            {
-              title: 'A living bookshelf',
-              text: 'Browse the club archive by title, author, date, or mood.',
-              to: '/books',
-            },
-            {
-              title: 'Meeting memories',
-              text: 'Keep snapshots, captions, locations, and book pairings together.',
-              to: '/photos',
-            },
-            {
-              title: 'The club story',
-              text: 'Save the origin story, rhythms, traditions, and member notes.',
-              to: '/about',
-            },
-          ].map((item) => (
-            <Link
-              key={item.title}
-              to={item.to}
-              className="rounded-2xl border border-espresso/10 bg-vellum p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
-            >
-              <h2 className="font-display text-2xl text-espresso">{item.title}</h2>
-              <p className="mt-3 leading-7 text-espresso/70">{item.text}</p>
-              <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-burgundy">
-                Visit
-                <ArrowRight size={16} aria-hidden="true" />
-              </span>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </>
