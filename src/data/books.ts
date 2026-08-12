@@ -8,6 +8,22 @@ const goodreadsSearchUrl = (title: string, author: string) =>
 // placeholder covers, or point it to a file in public/images/covers.
 export const books: Book[] = [
   {
+    id: 'to-kill-a-mockingbird',
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
+    coverImage: '/images/covers/to-kill-a-mockingbird.jpg',
+    dateRead: '2026-08-01',
+    genre: ['Classic', 'Coming of Age', 'Justice'],
+    shortDescription:
+      'A classic novel of childhood, conscience, race, and moral courage in a small Alabama town.',
+    clubNotes:
+      'A big, canonical book for a room that will probably argue about innocence, justice, cowardice, courage, and how a childhood narrator can make adult failures feel even sharper.',
+    memorableQuote: 'Add a favorite line from the discussion here.',
+    meetingMemory:
+      'Add the real meeting memory here once the group has one saved.',
+    goodreadsUrl: goodreadsSearchUrl('To Kill a Mockingbird', 'Harper Lee'),
+  },
+  {
     id: 'tell-me-everything',
     title: 'Tell Me Everything',
     author: 'Elizabeth Strout',
